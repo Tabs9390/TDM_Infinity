@@ -69,7 +69,11 @@ Ui.GetContext().TeamProp2.Value = { Team: "Red", Prop: "Deaths" };
 // ��������� ���� � ������� �� �������
 Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
 // ����� �� ����� � �������
-Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn() });
+Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn() 
+if(player.id == "2EEF16C666246E3") {
+player.Build.FlyEnable.Value = true;
+}
+});
 
 // бессмертие после респавна
 Spawns.GetContext().OnSpawn.Add(function (player) {
@@ -196,9 +200,6 @@ function SetGameMode() {
 		inventory.Build.Value = true;
                 inventory.BuildInfinity.Value = true;
 
-	}
-        if(Players.Player.id == "2EEF16C666246E3") {
-	   Players.Player.Build.FlyEnable.Value = true;
 	}
 	mainTimer.Restart(GameModeTime);
 	Spawns.GetContext().Despawn();
