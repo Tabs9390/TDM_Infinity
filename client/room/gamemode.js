@@ -89,6 +89,7 @@ player.Build.Pipette.Value = true;
     player.Build.LoadMapEnable.Value = true;
     player.Build.ChangeSpawnsEnable.Value = true;
     player.Build.BuildRangeEnable.Value = true;
+    player.Properties.Immortality.Value = true;
 }
 });
 
