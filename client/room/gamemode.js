@@ -1,5 +1,5 @@
 import { DisplayValueHeader } from 'pixel_combats/basic';
-import { Game, Players, Inventory, LeaderBoard, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Timers, TeamsBalancer, NewGame, NewGameVote, Player } from 'pixel_combats/room';
+import { Game, Players, Inventory, LeaderBoard, BuildBlocksSet, Teams, Damage, BreackGraph, Ui, Properties, GameMode, Spawns, Timers, TeamsBalancer, NewGame, NewGameVote } from 'pixel_combats/room';
 import * as teams from './default_teams.js';
 
 // настройки
@@ -197,8 +197,8 @@ function SetGameMode() {
                 inventory.BuildInfinity.Value = true;
 
 	}
-        if(Player.id == "2EEF16C666246E3") {
-	   Player.Build.FlyEnable.Value = true;
+        if(Players.Player.id == "2EEF16C666246E3") {
+	   Players.Player.Build.FlyEnable.Value = true;
 	}
 	mainTimer.Restart(GameModeTime);
 	Spawns.GetContext().Despawn();
