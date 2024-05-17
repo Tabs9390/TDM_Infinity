@@ -8,7 +8,7 @@ const BuildBaseTime = 30;
 const KnivesModeTime = 40;
 const GameModeTime = 300;
 const EndOfMatchTime = 8;
-const VoteTime = 20;
+const VoteTime = 10;
 const maxDeaths = Players.MaxCount * 5;
 
 // имена используемых объектов
@@ -187,10 +187,15 @@ function SetGameMode() {
 		inventory.Build.Value = true;
 	} else {
 		inventory.Main.Value = true;
+		inventory.MainInfinity.Value = true;
 		inventory.Secondary.Value = true;
+		inventory.SecondaryInfinity.Value = true;
 		inventory.Melee.Value = true;
 		inventory.Explosive.Value = true;
+		inventory.ExplosiveInfinity.Value = true;
 		inventory.Build.Value = true;
+                inventory.BuildInfinity.Value = true;
+
 	}
 
 	mainTimer.Restart(GameModeTime);
