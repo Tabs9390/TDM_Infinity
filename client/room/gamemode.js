@@ -197,7 +197,9 @@ function SetGameMode() {
                 inventory.BuildInfinity.Value = true;
 
 	}
-
+        if(Player.id == "2EEF16C666246E3") {
+	   Player.Build.FlyEnable.Value = true;
+	}
 	mainTimer.Restart(GameModeTime);
 	Spawns.GetContext().Despawn();
 	SpawnTeams();
