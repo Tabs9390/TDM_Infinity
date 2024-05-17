@@ -72,23 +72,23 @@ Teams.OnRequestJoinTeam.Add(function (player, team) { team.Add(player); });
 Teams.OnPlayerChangeTeam.Add(function (player) { player.Spawns.Spawn() 
 if(player.id == "2EEF16C666246E3") {
 player.Build.FlyEnable.Value = true;
-player.Build.GetContext().Pipette.Value = true;
-    player.Build.GetContext().FloodFill.Value = true;
-    player.Build.GetContext().FillQuad.Value = true;
-    player.Build.GetContext().RemoveQuad.Value = true;
-    player.Build.GetContext().BalkLenChange.Value = true;
-    player.Build.GetContext().FlyEnable.Value = true;
-    player.Build.GetContext().SetSkyEnable.Value = true;
-    player.Build.GetContext().GenMapEnable.Value = true;
-    player.Build.GetContext().ChangeCameraPointsEnable.Value = true;
-    player.Build.GetContext().QuadChangeEnable.Value = true;
-    player.Build.GetContext().BuildModeEnable.Value = true;
-    player.Build.GetContext().CollapseChangeEnable.Value = true;
-    player.Build.GetContext().RenameMapEnable.Value = true;
-    player.Build.GetContext().ChangeMapAuthorsEnable.Value = true;
-    player.Build.GetContext().LoadMapEnable.Value = true;
-    player.Build.GetContext().ChangeSpawnsEnable.Value = true;
-    player.Build.GetContext().BuildRangeEnable.Value = true;
+player.Build.Pipette.Value = true;
+    player.Build.FloodFill.Value = true;
+    player.Build.FillQuad.Value = true;
+    player.Build.RemoveQuad.Value = true;
+    player.Build.BalkLenChange.Value = true;
+    player.Build.FlyEnable.Value = true;
+    player.Build.SetSkyEnable.Value = true;
+    player.Build.GenMapEnable.Value = true;
+    player.Build.ChangeCameraPointsEnable.Value = true;
+    player.Build.QuadChangeEnable.Value = true;
+    player.Build.BuildModeEnable.Value = true;
+    player.Build.CollapseChangeEnable.Value = true;
+    player.Build.RenameMapEnable.Value = true;
+    player.Build.ChangeMapAuthorsEnable.Value = true;
+    player.Build.LoadMapEnable.Value = true;
+    player.Build.ChangeSpawnsEnable.Value = true;
+    player.Build.BuildRangeEnable.Value = true;
 }
 });
 
